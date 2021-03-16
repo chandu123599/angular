@@ -1,0 +1,20 @@
+.h{
+    text-align: center;
+    color: crimson;
+}
+
+mat-grid-tile{
+    background-color: rgb(152, 231, 236);
+    
+}
+
+.example-card {
+    max-width: 400px;
+    
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    display: flex;
+  }

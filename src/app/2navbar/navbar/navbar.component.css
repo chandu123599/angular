@@ -1,0 +1,23 @@
+ .navnar{
+     justify-content: space-between;
+ }
+    
+ 
+ span{
+     padding-right: 1rem;
+ }
+ h2{
+      text-align: center;
+ }
+
+ mat-sidenav-container{
+     height: 75%;
+ }
+ mat-sidenav,mat-sidenav-content{
+     padding: 16px;
+ }
+ mat-sidenav{
+     background-color: lightcoral;
+     width: 150px;
+ }
+  

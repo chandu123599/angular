@@ -1,0 +1,26 @@
+ <mat-toolbar class="navbar">
+    
+<div>codevation</div>
+    <div>
+         <span>home</span>
+         <span>about</span>
+         <span>contact</span>
+    </div>
+ </mat-toolbar><br>
+
+ <h2>sidenavbar</h2>
+ <mat-sidenav-container>
+     <mat-sidenav #sidenav mode="push" [(opened)]="opened">sidenav<br>
+          <span>Home</span><br>
+          <span>About</span><br>
+          <span>Services</span><br>
+          <span>Contact Us!!!!</span>
+     </mat-sidenav>
+      
+     <mat-sidenav-content  >main
+         <button (click)="opened=!opened"  mat-raised-button color="primary" style="margin: 10px;">Toggle opened</button>
+         <button (click)="sidenav.open()"  mat-raised-button color="accent"  style="margin: 5px;">Open</button>
+         <button (click)="sidenav.close()" mat-flat-button color="warn"      style="margin: 5px;">Close</button>
+     </mat-sidenav-content>
+ </mat-sidenav-container>
+<!--#sidenav mode="side" [(opened)]="opened"-->

@@ -1,0 +1,80 @@
+<p>button works!</p>
+<div>
+    <button mat-button color="primary" onclick="alert.open('successfully')">click me!</button>
+    <button mat-raised-button color="accent">click me!</button>
+    <button mat-flat-button color="warn">click me!</button>
+    <button mat-stroked-button color="primary">click me!</button>
+
+</div>
+<div>
+    <button mat-icon-button>icon</button>
+    <button mat-fab>fab</button>
+    <button mat-mini-fab>minifa</button>
+</div>
+<h1>button toggle</h1>
+
+<div>
+    <mat-button-toggle #toggleBtn checked disableRipple disabled>toggle</mat-button-toggle>
+    {{toggleBtn.checked}}
+</div><br>
+
+<div class="hero">
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="html">HTML</mat-button-toggle>
+        <mat-button-toggle value="css">CSS</mat-button-toggle>
+        <mat-button-toggle value="javascript">JAVASCRIPT</mat-button-toggle>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+</div><br>
+
+<h1>ICONS</h1>
+<div>
+    <mat-icon color="primary">grade</mat-icon>
+    <mat-icon>facebook</mat-icon>
+     
+</div><br>
+
+<h1>BADGE</h1>
+
+<p>
+    <!-- #docregion mat-badge-overlap -->
+      <span matBadge="4" matBadgeOverlap="false">Notification</span>
+    <!-- #enddocregion mat-badge-overlap -->
+    </p>
+    
+    <p>
+    <!-- #docregion mat-badge-size -->
+        <span matBadge="1" matBadgeSize="large">Notification</span>
+    <!-- #enddocregion mat-badge-size -->
+    </p>
+    
+    <p>
+        Notification
+    <!-- #docregion mat-badge-position -->
+      <button mat-raised-button color="primary"
+          matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+        Action
+      </button>
+    <!-- #enddocregion mat-badge-position -->
+    </p>
+    
+    <p>
+        Notification
+    <!-- #docregion mat-badge-hide -->
+        <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+            Hide
+        </button>
+    <!-- #enddocregion mat-badge-hide -->
+    </p>
+    
+    <p>
+        Notification
+    <!-- #docregion mat-badge-color -->
+      <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+    <!-- #enddocregion mat-badge-color -->
+        <!-- Include text description of the icon's meaning for screen-readers -->
+        <span class="cdk-visually-hidden">
+            Notification
+        </span>
+    </p>
